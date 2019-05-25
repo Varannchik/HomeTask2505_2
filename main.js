@@ -1,10 +1,13 @@
-let b,x;
-function num(a) {
-    b=+a;             
-    document.getElementById('textarea').innerHTML=a;    
+let b,x,num1,elem;
+
+function num(a) {    
+    let elem=document.getElementById('textarea');    
+    elem.innerText=elem.innerText+a;            
 }
-function operation(sign){            
-    num1=+document.getElementById('textarea').innerHTML;    
+function operation(sign){
+    b=+document.getElementById('textarea').innerHTML;
+    console.log(b);
+    document.getElementById('textarea').innerHTML='';
     if(sign=='+'){
         x='plus';        
     }else if(sign=='-'){
@@ -16,33 +19,30 @@ function operation(sign){
     }
 }
 function ravno(rav){
+    let num1=+document.getElementById('textarea').innerHTML;
+    console.log(num1);    
     switch(x){
         case "plus":
-                resultNum = num1+b;
-                console.log(resultNum);
+                resultNum = b+num1;                
                 document.getElementById('textarea').innerHTML=resultNum;
                 break;
 
         case "minus":
-                resultNum = num1-b;
-                console.log(resultNum);
+                resultNum = b-num1;                
                 document.getElementById('textarea').innerHTML=resultNum;
                 break;
 
         case "division":
-            if(b!==0){
-                resultNum = num1/b;
-                console.log(resultNum); 
+            if(num1!==0){
+                resultNum = b/num1;                 
             } else{
-                resultNum='на ноль делить нельзя'; 
-                console.log(resultNum);
+                resultNum='на ноль делить нельзя';
             }               
                 document.getElementById('textarea').innerHTML=resultNum;
                 break;
 
         case "multiplication":
-                resultNum = num1*b;
-                console.log(resultNum);
+                resultNum = b*num1;               
                 document.getElementById('textarea').innerHTML=resultNum;
                 break;
     } 
