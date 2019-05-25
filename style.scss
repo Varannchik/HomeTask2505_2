@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calk{
+    width: 500px;
+    height: 500px;   
+    background: lightgray;
+    border: 2px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+    display:grid; 
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: 
+    "inp inp inp inp inp inp inp inp inp inp inp inp"
+    "ar1 ar1 ar1 ar2 ar2 ar2 ar3 ar3 ar3 ar4 ar4 ar4"
+    "ar5 ar5 ar5 ar6 ar6 ar6 ar7 ar7 ar7 ar8 ar8 ar8"
+    "ar9 ar9 ar9 ar10 ar10 ar10 ar11 ar11 ar11 ar12 ar12 ar12"
+    "ar13 ar13 ar13 ar13 ar14 ar14 ar14 ar14 ar15 ar15 ar15 ar15";   
+    
+    .btn{
+        width: 60px;
+        height: 60px;               
+        border: 1px solid gray;
+        border-radius: 3px;
+        display: grid;
+        align-self: center;
+        justify-self: center;
+        cursor: pointer;
+        line-height: 52px;
+        font-size: 18px;
+        text-align: center;
+        background: transparent;
+    }
+    button{
+        width: 60px;
+        height: 60px;               
+        border: 1px solid gray;
+        border-radius: 3px;
+        display: grid;
+        align-self: center;
+        justify-self: center;
+        cursor: pointer;
+        line-height: 52px;
+        font-size: 18px;
+        text-align: center;
+        background: transparent;
+    }
+
+    p{       
+        grid-area: inp;       
+        border-radius: 3px;       
+        margin-bottom: 20px;
+        background:#fff;
+        font-size: 60px;
+        text-align: right;               
+    }
+   
+    .ar1{
+        grid-area: ar1;
+    }
+    .ar2{
+        grid-area: ar2;
+    }
+    .ar3{
+        grid-area: ar3;
+    }
+    .ar4{
+        grid-area: ar4;
+    }
+    .ar5{
+        grid-area: ar5;
+    }
+    .ar6{
+        grid-area: ar6;
+    }
+    .ar7{
+        grid-area: ar7;
+    }
+    .ar8{
+        grid-area: ar8;
+    }
+    .ar9{
+        grid-area: ar9;
+    }
+    .ar10{
+        grid-area: ar10;
+    }
+    .ar11{
+        grid-area: ar11;
+    }
+    .ar12{
+        grid-area: ar12;
+    }
+    .ar13{
+        grid-area: ar13;
+        width: 90px;
+        line-height: 60px;
+    }
+    .ar14{
+        grid-area: ar14;
+        width: 90px;
+       
+    }
+    .ar15{
+        grid-area: ar15;
+        width: 90px;
+    }
+   
+}
